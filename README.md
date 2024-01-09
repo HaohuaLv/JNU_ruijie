@@ -15,12 +15,12 @@
 ## 创建桌面快捷无后台执行
 
 这里需要创建3个文件
-1. `ruijie.sh`脚本文件来后台运行`rjsupplicant.sh`。
-2. `ruijie_wrapper.sh`脚本文件来封装`ruijie.sh`(直接执行`ruijie.sh`会无法正常后台执行，原因未知)。
-3. `ruijie.desktop`桌面快捷来执行`ruijie_wrapper.sh`，实现双击桌面快捷即可。
+1. **ruijie.sh**脚本文件来后台运行**rjsupplicant.sh**。
+2. **ruijie_wrapper.sh**脚本文件来封装**ruijie.sh**(直接执行**ruijie.sh**会无法正常后台执行，原因未知)。
+3. **ruijie.desktop**桌面快捷来执行**ruijie_wrapper.sh**，实现双击桌面快捷即可。
 
 
-`ruijie.desktop`文件内容如下
+**ruijie.desktop**文件内容如下
 
     [Desktop Entry]
     Version=1.0
@@ -34,13 +34,13 @@
     Icon= <这个仓库附带logo的绝对路径(不需要可以删除这行)>
     Categories=Application;Network;
 
-`ruijie.wrapper.sh`文件内容如下
+**ruijie.wrapper.sh**文件内容如下
 
     #!/bin/bash
     cd <ruijie.sh文件绝对路径>
     sudo ./ruijie.sh
 
-`ruijie.sh`文件内容如下
+**ruijie.sh**文件内容如下
 
     #!/bin/bash
     cd <rjsupplicant.sh文件绝对路径>
@@ -55,4 +55,4 @@
     (sudo ./rjsupplicant.sh -a 1 -d 1 -u 你的学号 -p 你的密码 &)
     fi
 
-以上步骤完成之后直接双击桌面`ruijie.desktop`文件即可，这里双击后会需要输入密码，然后选择是开启还是关闭锐捷。
+以上步骤完成之后直接双击桌面**ruijie.desktop**文件即可，这里双击后会需要输入密码，然后选择是开启还是关闭锐捷。
