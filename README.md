@@ -55,3 +55,4 @@
     (sudo ./rjsupplicant.sh -a 1 -d 1 -u 你的学号 -p 你的密码 &)
     fi
 
+以上步骤完成之后直接双击桌面`ruijie.desktop`文件即可，这里双击后会需要输入密码，然后选择是开启还是关闭锐捷。
