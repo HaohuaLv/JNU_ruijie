@@ -4,7 +4,7 @@
 
 这个仓库主要记录了如何在ubuntu22.04系统下创建锐捷启动的快捷方式，并且无窗口后台运行。
 
-如何在ubuntu22.04系统下启动锐捷联网就不赘述了，主要流传如下
+如何在ubuntu22.04系统下启动锐捷联网就不赘述了，主要流程如下
 
 1. 在这个[链接](https://mynet.jnu.edu.cn/app/customer/fileHandle/downloadFile?fileName=Ruijie_Supplicant(Linux_student).zip)下载zip压缩包并解压。
 2. 按照里面的readme文件如下操作
